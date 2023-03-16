@@ -1,5 +1,5 @@
 <?php
-$page_title = "Settings";
+$page_title = "الإعدادات";
 include("includes/header.php");
 require("includes/lb_helper.php");
 require("language/language.php");
@@ -162,7 +162,7 @@ if (isset($_POST['submit'])) {
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
                             </svg>
-                            General Settings
+                            الإعدادات العامة
                         </a>
                     </li>
 
@@ -172,7 +172,7 @@ if (isset($_POST['submit'])) {
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
                             </svg>
-                            App Settings
+                            اعدادات التطبيق
                         </a>
                     </li>
 
@@ -182,7 +182,7 @@ if (isset($_POST['submit'])) {
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
                             </svg>
-                            API Settings
+                            API اعدادات
                         </a>
                     </li>
 
@@ -192,7 +192,7 @@ if (isset($_POST['submit'])) {
                                 <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
                                 <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
                             </svg>
-                            Privacy Policy
+                            سياسة الخصوصية
                         </a>
                     </li>
 
@@ -202,7 +202,7 @@ if (isset($_POST['submit'])) {
                                 <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
                                 <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
                             </svg>
-                            Terms
+                            الشروط
                         </a>
                     </li>
 
@@ -218,7 +218,7 @@ if (isset($_POST['submit'])) {
                                 <path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path>
                                 <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>
                             </svg>
-                            Ads Settings
+                            اعداد الإعلانات
                         </a>
                     </li>
                 </ul>
@@ -229,18 +229,18 @@ if (isset($_POST['submit'])) {
                         <div class="row">
                             <form action="" name="settings_general" method="POST" enctype="multipart/form-data">
                                 <div class="form-group row mb-4 mt-4">
-                                    <label class="col-sm-3 col-form-label" for="app_name">App Name</label>
+                                    <label class="col-sm-3 col-form-label" for="app_name">اسم التطبيق</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="app_name" id="app_name" value="<?php echo $settings_data['app_name'] ?>" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">App Logo</label>
+                                    <label class="col-sm-3 col-form-label">لوغو</label>
                                     <div class="col-sm-9">
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <input type="file" class="form-control-file" name="app_logo" value="fileupload" accept=".png, .jpg, .JPG .PNG" onchange="fileValidation()" id="fileupload">
-                                                <p class="control-label-help hint_lbl">(Recommended resolution: 512x512)</p>
+                                                <p class="control-label-help hint_lbl">(الدقة المستحسنة: 512x512)</p>
                                             </div>
                                             <div class="col-md-3">
                                                 <?php if ($settings_data['app_logo'] != '' and file_exists('images/' . $settings_data['app_logo'])) { ?>
@@ -258,13 +258,13 @@ if (isset($_POST['submit'])) {
                                 </div>
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Email</label>
+                                    <label class="col-sm-3 col-form-label">البريد</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="app_email" id="app_email" value="<?php echo $settings_data['app_email'] ?>" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Author</label>
+                                    <label class="col-sm-3 col-form-label">الكاتب</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="app_author" id="app_author" value="<?php echo $settings_data['app_author'] ?>" class="form-control">
                                     </div>
@@ -277,19 +277,19 @@ if (isset($_POST['submit'])) {
                                 </div>
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Website</label>
+                                    <label class="col-sm-3 col-form-label">الموقع</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="app_website" id="app_website" value="<?php echo $settings_data['app_website'] ?>" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Developed By</label>
+                                    <label class="col-sm-3 col-form-label">طور من قبل</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="app_developed_by" id="app_developed_by" value="<?php echo $settings_data['app_developed_by'] ?>" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Description</label>
+                                    <label class="col-sm-3 col-form-label">الوصف</label>
                                     <div class="col-sm-9">
                                         <textarea name="app_description" id="app_description" class="form-control"><?php echo stripslashes($settings_data['app_description']); ?></textarea>
                                     </div>
@@ -298,7 +298,7 @@ if (isset($_POST['submit'])) {
                                 <div class="form-group row mb-4">
                                     <div class="col-sm-3"></div>
                                     <div class="col-sm-9">
-                                        <button type="submit" name="submit" class="btn btn-primary" style="min-width: 100px;">Save</button>
+                                        <button type="submit" name="submit" class="btn btn-primary" style="min-width: 100px;">حفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -321,7 +321,7 @@ if (isset($_POST['submit'])) {
                                 </div>
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">App Maintenance</label>
+                                    <label class="col-sm-3 col-form-label">تفعيل وضع الصيانة</label>
                                     <div class="col-sm-9">
                                         <label class="switch">
                                             <input type="checkbox" id="isMaintenance" name="isMaintenance" value="true" class="cbx hidden" <?php if ($settings_data['isMaintenance'] == 'true') {
@@ -332,7 +332,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Disable Screenshot</label>
+                                    <label class="col-sm-3 col-form-label">منع تصوير الشاشة</label>
                                     <div class="col-sm-9">
                                         <label class="switch">
                                             <input type="checkbox" id="isScreenshot" name="isScreenshot" value="true" class="cbx hidden" <?php if ($settings_data['isScreenshot'] == 'true') {
@@ -343,7 +343,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Login</label>
+                                    <label class="col-sm-3 col-form-label">تسجيل الدخول</label>
                                     <div class="col-sm-9">
                                         <label class="switch">
                                             <input type="checkbox" id="isLogin" name="isLogin" value="true" class="cbx hidden" <?php if ($settings_data['isLogin'] == 'true') {
@@ -354,7 +354,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Google Login</label>
+                                    <label class="col-sm-3 col-form-label">Google تسجيل</label>
                                     <div class="col-sm-9">
                                         <label class="switch">
                                             <input type="checkbox" id="isGoogleLogin" name="isGoogleLogin" value="true" class="cbx hidden" <?php if ($settings_data['isGoogleLogin'] == 'true') {
@@ -367,7 +367,7 @@ if (isset($_POST['submit'])) {
                                 <div class="form-group row mb-4">
                                     <div class="col-sm-3"></div>
                                     <div class="col-sm-9">
-                                        <button type="submit" name="app_submit" class="btn btn-primary" style="min-width: 100px;">Save</button>
+                                        <button type="submit" name="app_submit" class="btn btn-primary" style="min-width: 100px;">حفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -398,8 +398,8 @@ if (isset($_POST['submit'])) {
                                             <label class="col-sm-4 col-form-label">ترتيب الفئة</label>
                                             <div class="col-sm-8">
                                                 <select name="api_cat_order_by" id="api_cat_order_by" class="form-control" required>
-                                                    <option value="cid" <?php if ($settings_data['api_cat_order_by'] == 'cid') { ?>selected<?php } ?>>ID</option>
-                                                    <option value="category_name" <?php if ($settings_data['api_cat_order_by'] == 'category_name') { ?>selected<?php } ?>>Name</option>
+                                                    <option value="cid" <?php if ($settings_data['api_cat_order_by'] == 'cid') { ?>selected<?php } ?>>الرقم</option>
+                                                    <option value="category_name" <?php if ($settings_data['api_cat_order_by'] == 'category_name') { ?>selected<?php } ?>>الاسم</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -408,14 +408,14 @@ if (isset($_POST['submit'])) {
                                             <label class="col-sm-4 col-form-label">ترتيب الفئة</label>
                                             <div class="col-sm-8">
                                                 <select name="api_cat_post_order_by" id="api_cat_post_order_by" class="form-control" required>
-                                                    <option value="ASC" <?php if ($settings_data['api_cat_post_order_by'] == 'ASC') { ?>selected<?php } ?>>ASC</option>
-                                                    <option value="DESC" <?php if ($settings_data['api_cat_post_order_by'] == 'DESC') { ?>selected<?php } ?>>DESC</option>
+                                                    <option value="ASC" <?php if ($settings_data['api_cat_post_order_by'] == 'ASC') { ?>selected<?php } ?>>تصاعدي</option>
+                                                    <option value="DESC" <?php if ($settings_data['api_cat_post_order_by'] == 'DESC') { ?>selected<?php } ?>>تنازلي</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" name="api_submit" class="btn btn-primary" style="min-width: 100px;">Save</button>
+                                <button type="submit" name="api_submit" class="btn btn-primary" style="min-width: 100px;">حفظ</button>
                             </form>
                         </div>
                     </div>
@@ -437,7 +437,7 @@ if (isset($_POST['submit'])) {
                                 <div class="col-12">
                                     <textarea id="editor" name="app_privacy_policy" cols="30" rows="10"><?php echo stripslashes($settings_data['app_privacy_policy']); ?></textarea>
                                 </div>
-                                <button type="submit" name="policy_submit" class="btn btn-primary" style="min-width: 100px;">Save</button>
+                                <button type="submit" name="policy_submit" class="btn btn-primary" style="min-width: 100px;">حفظ</button>
                             </form>
                         </div>
                     </div>
@@ -459,7 +459,7 @@ if (isset($_POST['submit'])) {
                                 <div class="col-12">
                                     <textarea id="editor2" name="app_terms" cols="30" rows="10"><?php echo stripslashes($settings_data['app_terms']); ?></textarea>
                                 </div>
-                                <button type="submit" name="terms_submit" class="btn btn-primary" style="min-width: 100px;">Save</button>
+                                <button type="submit" name="terms_submit" class="btn btn-primary" style="min-width: 100px;">حفظ</button>
                             </form>
                         </div>
                     </div>
@@ -658,7 +658,7 @@ if (isset($_POST['submit'])) {
                                     <div class="col-md-4">
                                         <div class="ads_view">
                                             <div class="ads_view_header">
-                                                <label class="control-label">Custom ads</label>
+                                                <label class="control-label">اعلان خاص</label>
                                                 <div class="row toggle_btn">
                                                     <label class="switch">
                                                         <input type="checkbox" id="checked2" name="custom_ads" value="true" class="cbx hidden" <?php if ($settings_data['custom_ads'] == 'true') {
@@ -671,15 +671,15 @@ if (isset($_POST['submit'])) {
                                             <div class="col-md-12 p-2">
                                                 <div class="form-group">
 
-                                                    <p class="mb-1 ">Image URL</p>
+                                                    <p class="mb-1 ">صورة</p>
                                                     <div class="col-md-12">
                                                         <input type="text" name="custom_ads_img" id="custom_ads_img" value="<?php echo $settings_data['custom_ads_img']; ?>" class="form-control">
                                                     </div>
-                                                    <p class="mb-1 ">Ad URL</p>
+                                                    <p class="mb-1 ">Ad رابط</p>
                                                     <div class="col-md-12">
                                                         <input type="text" name="custom_ads_link" id="custom_ads_link" value="<?php echo $settings_data['custom_ads_link']; ?>" class="form-control">
                                                     </div>
-                                                    <p class="mb-1 ">Ad Clicks</p>
+                                                    <p class="mb-1 ">عدد النقرات</p>
                                                     <div class="col-md-12">
                                                         <input type="text" name="custom_ads_clicks" id="custom_ads_clicks" value="<?php echo $settings_data['custom_ads_clicks']; ?>" class="form-control ads_click">
                                                     </div>
@@ -688,7 +688,7 @@ if (isset($_POST['submit'])) {
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" name="ads_submit" class="btn btn-primary" style="min-width: 100px;">Save</button>
+                                <button type="submit" name="ads_submit" class="btn btn-primary" style="min-width: 100px;">حفظ</button>
                             </form>
                         </div>
                     </div>

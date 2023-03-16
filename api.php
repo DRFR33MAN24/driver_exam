@@ -231,7 +231,7 @@ if ($get_helper['helper_name'] == "get_language_list") {
 
 	while ($data = mysqli_fetch_assoc($result)) {
 
-		$row['sid'] = $data['sid'];
+		$row['sid'] = $data['id'];
 		$row['signs_name'] = $data['signs_name'];
 		$row['signs_image'] = get_images($data['signs_image']);
 		$row['signs_image_thumb'] = get_thumb('images/' . $data['signs_image'], '300x300');
@@ -277,7 +277,7 @@ if ($get_helper['helper_name'] == "get_language_list") {
 
 	while ($data = mysqli_fetch_assoc($result)) {
 
-		$row['sid'] = $data['sid'];
+		$row['sid'] = $data['id'];
 		$row['signs_name'] = $data['signs_name'];
 		$row['signs_image'] = get_images($data['signs_image']);
 		$row['signs_image_thumb'] = get_thumb('images/' . $data['signs_image'], '300x300');

@@ -1,5 +1,5 @@
 <?php
-$page_title = "SMTP Settings";
+$page_title = "SMTP اعدادات";
 include("includes/header.php");
 require("includes/lb_helper.php");
 require("language/language.php");
@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-7">
                         <form action="" method="post" class="form form-horizontal" enctype="multipart/form-data">
                             <div class="form-group row mb-4">
-                                <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTP Type</label>
+                                <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTP نوع</label>
                                 <div class="col-md-2">
                                     <div class="form-check">
                                         <input type="radio" name="smtp_type" id="gmail" class="form-check-input" value="gmail" <?php if ($row['smtp_type'] == 'gmail') {
@@ -90,7 +90,7 @@ if (isset($_POST['submit'])) {
                                         <input type="radio" name="smtp_type" id="server" class="form-check-input" value="server" <?php if ($row['smtp_type'] == 'server') {
                                                                                                                                         echo ' checked="" disabled="disabled"';
                                                                                                                                     } ?>>
-                                        <label class="form-check-label" for="server">Server SMTP</label>
+                                        <label class="form-check-label" for="server">مخدم SMTP</label>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@ if (isset($_POST['submit'])) {
                                                             echo 'style="display:none"';
                                                         } ?>>
                                 <div class="form-group row mb-4">
-                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTP Host</label>
+                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTP مخدم</label>
                                     <div class="col-xl-10 col-lg-9 col-sm-10">
                                         <input type="text" name="smtp_host[]" class="form-control col-md-7" value="<?= $row['smtp_ghost'] ?>" placeholder="mail.example.in" <?php if ($row['smtp_type'] == 'gmail') {
                                                                                                                                                                                 echo 'required';
@@ -109,7 +109,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Email</label>
+                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">البريد</label>
                                     <div class="col-xl-10 col-lg-9 col-sm-10">
                                         <input type="text" name="smtp_email[]" class="form-control col-md-7" value="<?= $row['smtp_gemail'] ?>" placeholder="info@example.com" <?php if ($row['smtp_type'] == 'gmail') {
                                                                                                                                                                                     echo 'required';
@@ -117,13 +117,13 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Password</label>
+                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">كلمة السر</label>
                                     <div class="col-xl-10 col-lg-9 col-sm-10">
                                         <input type="password" name="smtp_password[]" class="form-control col-md-7" value="" placeholder="********">
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTPSecure</label>
+                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTP Secure</label>
                                     <div class="col-md-3">
                                         <select name="smtp_secure[]" class="select2 form-control" <?php if ($row['smtp_type'] == 'gmail') {
                                                                                                         echo 'required';
@@ -149,7 +149,7 @@ if (isset($_POST['submit'])) {
                                                             echo 'style="display:none"';
                                                         } ?>>
                                 <div class="form-group row mb-4">
-                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTP Host</label>
+                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">SMTP مخدم</label>
                                     <div class="col-xl-10 col-lg-9 col-sm-10">
                                         <input type="text" name="smtp_host[]" id="smtp_host" class="form-control col-md-7" value="<?= $row['smtp_host'] ?>" placeholder="mail.example.in" <?php if ($row['smtp_type'] == 'server') {
                                                                                                                                                                                                 echo 'required';
@@ -157,7 +157,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Email</label>
+                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">البريد</label>
                                     <div class="col-xl-10 col-lg-9 col-sm-10">
                                         <input type="text" name="smtp_email[]" id="smtp_email" class="form-control col-md-7" value="<?= $row['smtp_email'] ?>" placeholder="info@example.com" <?php if ($row['smtp_type'] == 'server') {
                                                                                                                                                                                                     echo 'required';
@@ -165,7 +165,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Password</label>
+                                    <label class="col-xl-2 col-sm-3 col-sm-2 col-form-label">كلمة السر</label>
                                     <div class="col-xl-10 col-lg-9 col-sm-10">
                                         <input type="password" name="smtp_password[]" id="smtp_password" class="form-control col-md-7" value="" placeholder="********">
                                     </div>
@@ -194,26 +194,26 @@ if (isset($_POST['submit'])) {
                             <input type="hidden" id="server_data" data-stuff='<?php echo htmlentities(json_encode($row)); ?>'>
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="submit" name="submit" class="btn btn-primary mt-3">Save</button>
+                                    <button type="submit" name="submit" class="btn btn-primary mt-3">حفظ</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="col-md-5">
                         <div class="form-control" style="padding: 10px 20px;border-radius: 6px;margin-top:15px;">
-                            <h4>Check Mail Configuration</h4>
-                            <p style="color:#8a8a8a;">Send test mail to your email to check Email functionality work or not.</p>
+                            <h4>اختبر اعدادات البؤيد</h4>
+                            <p style="color:#8a8a8a;">ارسل بريد اختباري لترى إن كان البريد يعمل ام لا</p>
                             <hr />
                             <form action="" method="post" id="check_smtp_form">
                                 <div class="form-group">
-                                    <label class="control-label">Email <span style="color: red">*</span>:-</label>
+                                    <label class="control-label">البريد <span style="color: red">*</span>:-</label>
                                     <div>
                                         <input type="text" name="email" class="form-control" autocomplete="off" placeholder="info@example.com" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div>
-                                        <button type="submit" name="btn_send" class="btn btn-primary">Send</button>
+                                        <button type="submit" name="btn_send" class="btn btn-primary">ارسال</button>
                                     </div>
                                 </div>
                             </form>

@@ -74,7 +74,7 @@ $result = mysqli_query($mysqli, $sql_query) or die(mysqli_error($mysqli));
                         </div>
                     </form>
                     <div class="pb-card__head__option__item">
-                        <a href="add_user.php?add" class="btn btn-sm btn-primary">+ <span class="d-none d-sm-inline-block">Add user</span></a>
+                        <a href="add_user.php?add" class="btn btn-sm btn-primary">+ <span class="d-none d-sm-inline-block">اضف مستخدم</span></a>
                     </div>
                 </div>
             </div>
@@ -84,11 +84,11 @@ $result = mysqli_query($mysqli, $sql_query) or die(mysqli_error($mysqli));
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th style="width: 40px;">Image</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th class="text-center">Status</th>
-                                    <th style="width: 200px;" class="text-center">Actions</th>
+                                    <th style="width: 40px;">الصورة</th>
+                                    <th>الاسم</th>
+                                    <th>البريد</th>
+                                    <th class="text-center">الحالة</th>
+                                    <th style="width: 200px;" class="text-center">خيارات</th>
                                 </tr>
                             </thead>
                             <tbody>

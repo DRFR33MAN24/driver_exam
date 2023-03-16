@@ -176,7 +176,7 @@ if (isset($_POST['submit'])) {
                                 <div class="form-group row mb-4">
                                     <div class="col-sm-3"></div>
                                     <div class="col-sm-9">
-                                        <button type="submit" name="notification_submit" class="btn btn-primary" style="min-width: 100px;">Save</button>
+                                        <button type="submit" name="notification_submit" class="btn btn-primary" style="min-width: 100px;">حفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -232,7 +232,7 @@ if (isset($_POST['submit'])) {
                                 </div>
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-sm-3 col-form-label">Title</label>
+                                    <label class="col-sm-3 col-form-label">العنوان</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="notification_title" id="notification_title" value="" class="form-control">
                                     </div>

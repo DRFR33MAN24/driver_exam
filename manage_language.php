@@ -1,5 +1,5 @@
 <?php
-$page_title = "Manage language";
+$page_title = "ادارة اللغة";
 include("includes/header.php");
 require("includes/lb_helper.php");
 require("language/language.php");

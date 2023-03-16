@@ -1,11 +1,11 @@
 <?php
-$page_title = (isset($_GET['user_id'])) ? 'Edit User' : 'Add User';
+$page_title = (isset($_GET['user_id'])) ? 'تعديل مستخدم' : 'اضف مستخدم';
 include("includes/header.php");
 require("includes/lb_helper.php");
 require("language/language.php");
 require_once("thumbnail_images.class.php");
 
-$page_save = (isset($_GET['user_id'])) ? 'Save' : 'Create';
+$page_save = (isset($_GET['user_id'])) ? 'حفظ' : 'إنشاء';
 
 if (isset($_POST['submit']) and isset($_GET['add'])) {
 
@@ -156,7 +156,7 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
                     <input type="hidden" name="user_id" value="<?= (isset($_GET['user_id'])) ? $_GET['user_id'] : '' ?>" />
                     <div class="row">
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Full name</label>
+                            <label class="col-sm-3 col-form-label">الاسم الكامل</label>
                             <div class="col-sm-9">
                                 <input type="text" name="user_name" value="<?php if (isset($_GET['user_id'])) {
                                                                                 echo $user_row['user_name'];
@@ -164,7 +164,7 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Email ID</label>
+                            <label class="col-sm-3 col-form-label">البريد</label>
                             <div class="col-sm-9">
                                 <input type="text" name="user_email" value="<?php if (isset($_GET['user_id'])) {
                                                                                 echo $user_row['user_email'];
@@ -172,7 +172,7 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Mobile</label>
+                            <label class="col-sm-3 col-form-label">الهاتف</label>
                             <div class="col-sm-9">
                                 <input type="text" name="user_phone" value="<?php if (isset($_GET['user_id'])) {
                                                                                 echo $user_row['user_phone'];
@@ -180,28 +180,28 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Password</label>
+                            <label class="col-sm-3 col-form-label">كلمة المرور</label>
                             <div class="col-sm-9">
                                 <input type="text" name="user_password" class="form-control">
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Gender</label>
+                            <label class="col-sm-3 col-form-label">الجنس</label>
                             <div class="col-sm-9">
                                 <select name="user_gender" id="user_gender" class="form-control" required>
-                                    <option value="">--Select Gender--</option>
+                                    <option value="">--حدد الجنس--</option>
                                     <?php if (isset($_GET['user_id'])) { ?>
                                         <option value="Male" <?php if ($user_row['user_gender'] == "Male") { ?>selected<?php } ?>>Male</option>
                                         <option value="Female" <?php if ($user_row['user_gender'] == 'Female') { ?>selected<?php } ?>>Female</option>
                                     <?php } else { ?>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
+                                        <option value="Male">ذكر</option>
+                                        <option value="Female">انثى</option>
                                     <?php } ?>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Select Profile Image</label>
+                            <label class="col-sm-3 col-form-label">اختر صورة البروفايل</label>
                             <div class="col-sm-9">
                                 <input type="file" class="form-control-file" name="profile_img" accept=".png, .jpg, .JPG .PNG" onchange="fileValidation()" id="fileupload">
                             </div>

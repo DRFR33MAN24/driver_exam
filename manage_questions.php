@@ -78,8 +78,8 @@ $result = mysqli_query($mysqli, $sql_query) or die(mysqli_error($mysqli));
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>QUESTION</th>
-                                    <th class="text-center">STATUS</th>
+                                    <th>سؤال</th>
+                                    <th class="text-center">الحالة</th>
                                     <th style="width: 200px;" class="text-center">خيارات</th>
                                 </tr>
                             </thead>

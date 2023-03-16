@@ -1,5 +1,5 @@
 <?php
-$page_title = "App Update";
+$page_title = "تحديث التطبيق";
 include("includes/header.php");
 require("includes/lb_helper.php");
 
@@ -51,19 +51,19 @@ if (isset($_POST['submit'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">New App Version Code</label>
+                            <label class="col-sm-3 col-form-label">رقم الاصدار الجديد</label>
                             <div class="col-sm-9 col-lg-9">
                                 <input type="number" min="1" name="app_new_version" id="app_new_version" required="" class="form-control" value="<?php echo $settings_row['app_new_version']; ?>">
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Description</label>
+                            <label class="col-sm-3 col-form-label">الوصف</label>
                             <div class="col-sm-9 col-lg-9">
                                 <textarea name="app_update_desc" class="form-control"><?php echo stripslashes($settings_row['app_update_desc']); ?></textarea>
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">App Link</label>
+                            <label class="col-sm-3 col-form-label">رابط التطبيق</label>
                             <div class="col-sm-9 col-lg-9">
                                 <input type="text" name="app_redirect_url" id="app_redirect_url" required="" class="form-control" value="<?php echo $settings_row['app_redirect_url']; ?>">
                             </div>
@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-group row">
                             <div class="col-sm-3"></div>
                             <div class="col-sm-9">
-                                <button type="submit" name="submit" class="btn btn-primary" style="min-width: 110px;">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary" style="min-width: 110px;">حفظ</button>
                             </div>
                         </div>
                     </form>

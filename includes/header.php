@@ -153,7 +153,7 @@ $mysqli->set_charset("utf8mb4");
                         </a>
                     </li>
 
-                    <!-- <li class="nav-item <?php if ($currentFile == "manage_language.php" or $currentFile == "add_language.php") { ?>active<?php } ?>">
+                    <li class="nav-item <?php if ($currentFile == "manage_language.php" or $currentFile == "add_language.php") { ?>active<?php } ?>">
                         <a class="nav-link pb-page-link" href="manage_language.php">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
                                 <path d="M16.99 8.95996H7.01001"></path>
@@ -164,7 +164,7 @@ $mysqli->set_charset("utf8mb4");
                             </svg>
                             <span class="nav-link__text">اللغة</span>
                         </a>
-                    </li> -->
+                    </li>
 
                     <li class="nav-item <?php if ($currentFile == "manage_by_signs.php" or $currentFile == "manage_signs.php" or $currentFile == "add_signs.php") { ?>active<?php } ?>">
                         <a class="nav-link pb-page-link" href="manage_by_signs.php">

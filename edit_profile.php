@@ -117,7 +117,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-group row">
                             <div class="col-sm-3"></div>
                             <div class="col-sm-9">
-                                <button type="submit" name="submit" class="btn btn-primary" style="min-width: 110px;">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary" style="min-width: 110px;">حفظ</button>
                             </div>
                         </div>
                     </div>

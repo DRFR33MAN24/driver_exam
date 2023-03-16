@@ -5,7 +5,7 @@ require("includes/lb_helper.php");
 require("language/language.php");
 require_once("thumbnail_images.class.php");
 
-$page_save = (isset($_GET['signs_id'])) ? 'Save' : 'Create';
+$page_save = (isset($_GET['signs_id'])) ? 'حفظ' : 'إنشاء';
 
 $cat_qry = "SELECT * FROM tbl_category ORDER BY category_name";
 $cat_result = mysqli_query($mysqli, $cat_qry);
@@ -133,7 +133,7 @@ if (isset($_POST['submit']) and isset($_POST['signs_id'])) {
                         </div>
 
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Signs Name</label>
+                            <label class="col-sm-3 col-form-label">اسم الإشارة</label>
                             <div class="col-sm-9">
                                 <input type="text" name="signs_name" class="form-control" value="<?php if (isset($_GET['signs_id'])) {
                                                                                                         echo $row['signs_name'];
@@ -141,7 +141,7 @@ if (isset($_POST['submit']) and isset($_POST['signs_id'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Select Image</label>
+                            <label class="col-sm-3 col-form-label">اختر صورة</label>
                             <div class="col-sm-9">
                                 <input type="file" class="form-control-file" name="signs_image" accept=".png, .jpg, .JPG .PNG" onchange="fileValidation()" id="fileupload">
                             </div>

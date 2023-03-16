@@ -1,5 +1,5 @@
 <?php
-$page_title = "Manage Signs";
+$page_title = "ادارة الاشارات";
 include("includes/header.php");
 require("includes/lb_helper.php");
 require("language/language.php");
@@ -71,7 +71,7 @@ $result = mysqli_query($mysqli, $sql_query) or die(mysqli_error($mysqli));
                         </div>
                     </form>
                     <div class="pb-card__head__option__item">
-                        <a href="add_signs.php?add=yes" class="btn btn-sm btn-primary">+ <span class="d-none d-sm-inline-block">Add Signs</span></a>
+                        <a href="add_signs.php?add=yes" class="btn btn-sm btn-primary">+ <span class="d-none d-sm-inline-block">إضافة اشارة</span></a>
                     </div>
                 </div>
             </div>

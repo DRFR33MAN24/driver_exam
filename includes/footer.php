@@ -46,14 +46,14 @@
 
 
     swal({
-      title: "Are you sure to delete this?",
+      title: "هل انت متأكد من انك تريد الحذف؟",
       type: "warning",
       confirmButtonClass: 'btn btn-primary mb-2',
       cancelButtonClass: 'btn btn-danger mb-2',
       buttonsStyling: false,
       showCancelButton: true,
-      confirmButtonText: "Yes",
-      cancelButtonText: "No",
+      confirmButtonText: "نعم",
+      cancelButtonText: "لا",
       closeOnConfirm: false,
       closeOnCancel: false,
       showLoaderOnConfirm: true

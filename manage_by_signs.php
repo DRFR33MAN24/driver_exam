@@ -58,9 +58,9 @@ function get_total_post($cat_id)
                             <div class="col-md-4 col-sm-6">
                                 <div class="pb-card-post-text">
                                     <h5><?php echo $row['language_name']; ?></h5>
-                                    <h6 class="card-title">Number of signs : <?php echo get_total_post($row['lid']); ?></h6>
+                                    <h6 class="card-title">عدد الاشارات: <?php echo get_total_post($row['lid']); ?></h6>
                                     <a href="manage_signs.php?lan_id=<?php echo $row['lid']; ?>" class="btn btn-success btn_cust bs-tooltip mt-2">
-                                        <i class="fa fa-history"> manage signs</i>
+                                        <i class="fa fa-history"> ادارة الاشارات</i>
                                     </a>
                                 </div>
                             </div>

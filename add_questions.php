@@ -1,11 +1,11 @@
 <?php
-$page_title = (isset($_GET['questions_id'])) ? 'Edit Question' : 'Add Question';
+$page_title = (isset($_GET['questions_id'])) ? 'تعديل سؤال' : 'اضف سؤال';
 include("includes/header.php");
 require("includes/lb_helper.php");
 require("language/language.php");
 require_once("thumbnail_images.class.php");
 
-$page_save = (isset($_GET['questions_id'])) ? 'Save' : 'Create';
+$page_save = (isset($_GET['questions_id'])) ? 'حفظ' : 'إنشاء';
 
 $language_qry = "SELECT * FROM tbl_language ORDER BY language_name";
 $language_result = mysqli_query($mysqli, $language_qry);
@@ -141,7 +141,7 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
                         </div>
 
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Question</label>
+                            <label class="col-sm-3 col-form-label">السؤال</label>
                             <div class="col-sm-9">
                                 <textarea name="answer" id="answer" class="form-control"><?php if (isset($_GET['questions_id'])) {
                                                                                                 echo stripslashes($row['answer']);
@@ -150,7 +150,7 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
                         </div>
 
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Answer A</label>
+                            <label class="col-sm-3 col-form-label">الجواب A</label>
                             <div class="col-sm-9">
                                 <textarea name="answer_a" id="answer_a" class="form-control"><?php if (isset($_GET['questions_id'])) {
                                                                                                     echo stripslashes($row['answer_a']);
@@ -158,7 +158,7 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Answer B</label>
+                            <label class="col-sm-3 col-form-label">الجواب B</label>
                             <div class="col-sm-9">
                                 <textarea name="answer_b" id="answer_b" class="form-control"><?php if (isset($_GET['questions_id'])) {
                                                                                                     echo stripslashes($row['answer_b']);
@@ -166,7 +166,7 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Answer C</label>
+                            <label class="col-sm-3 col-form-label">الجواب C</label>
                             <div class="col-sm-9">
                                 <textarea name="answer_c" id="answer_c" class="form-control"><?php if (isset($_GET['questions_id'])) {
                                                                                                     echo stripslashes($row['answer_c']);
@@ -174,7 +174,7 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Answer D </label>
+                            <label class="col-sm-3 col-form-label">الجواب D </label>
                             <div class="col-sm-9">
                                 <textarea name="answer_d" id="answer_d" class="form-control"><?php if (isset($_GET['questions_id'])) {
                                                                                                     echo stripslashes($row['answer_d']);
@@ -183,41 +183,41 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
                         </div>
 
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Correct Answer</label>
+                            <label class="col-sm-3 col-form-label">الصحيح الجواب</label>
                             <div class="col-sm-9">
                                 <select name="correctAnswer" id="correctAnswer" class="form-control" required>
                                     <?php if (isset($_GET['questions_id'])) { ?>
-                                        <option value="A" <?php if ($row['correctAnswer'] == 'A') { ?>selected<?php } ?>>Answer A</option>
-                                        <option value="B" <?php if ($row['correctAnswer'] == 'B') { ?>selected<?php } ?>>Answer B</option>
-                                        <option value="C" <?php if ($row['correctAnswer'] == 'C') { ?>selected<?php } ?>>Answer C</option>
-                                        <option value="D" <?php if ($row['correctAnswer'] == 'D') { ?>selected<?php } ?>>Answer D</option>
+                                        <option value="A" <?php if ($row['correctAnswer'] == 'A') { ?>selected<?php } ?>>الجواب A</option>
+                                        <option value="B" <?php if ($row['correctAnswer'] == 'B') { ?>selected<?php } ?>>الجواب B</option>
+                                        <option value="C" <?php if ($row['correctAnswer'] == 'C') { ?>selected<?php } ?>>الجواب C</option>
+                                        <option value="D" <?php if ($row['correctAnswer'] == 'D') { ?>selected<?php } ?>>الجواب D</option>
                                     <?php } else { ?>
-                                        <option value="A">Answer A</option>
-                                        <option value="B">Answer B</option>
-                                        <option value="C">Answer C</option>
-                                        <option value="D">Answer D</option>
+                                        <option value="A">الجواب A</option>
+                                        <option value="B">الجواب B</option>
+                                        <option value="C">الجواب C</option>
+                                        <option value="D">الجواب D</option>
                                     <?php } ?>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-group row mb-4">
-                            <label class="col-sm-3 col-form-label">Image Type</label>
+                            <label class="col-sm-3 col-form-label">نوع الصورة</label>
                             <div class="col-sm-9">
                                 <select name="image_type" id="image_type" class="form-control" required>
                                     <?php if (isset($_GET['questions_id'])) { ?>
                                         <option value="thumbnail_none" <?php if ($row['image_type'] == 'thumbnail_none') { ?>selected<?php } ?>>Image Hide</option>
                                         <option value="thumbnail_block" <?php if ($row['image_type'] == 'thumbnail_block') { ?>selected<?php } ?>>Image Show</option>
                                     <?php } else { ?>
-                                        <option value="thumbnail_none">Image Hide</option>
-                                        <option value="thumbnail_block">Image Show</option>
+                                        <option value="thumbnail_none">مخفية</option>
+                                        <option value="thumbnail_block">ظاهرة</option>
                                     <?php } ?>
                                 </select>
                             </div>
                         </div>
 
                         <div id="thumbnail" class="form-group row mb-4" <?php if (isset($_GET['questions_id']) and $row['image_type'] == 'thumbnail_block') { ?> style="display:show;" <?php } else { ?> style="display:none;" <?php } ?>>
-                            <label class="col-sm-3 col-form-label">Select Image</label>
+                            <label class="col-sm-3 col-form-label">اختر صورة</label>
                             <div class="col-sm-9">
                                 <input type="file" class="form-control-file" name="image" accept=".png, .jpg, .JPG .PNG" onchange="fileValidation()" id="fileupload">
                             </div>

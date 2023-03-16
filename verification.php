@@ -95,7 +95,7 @@ if (isset($_POST['submit'])) {
                             <label class="col-sm-3 col-form-label">ApiKey</label>
                             <div class="col-sm-9 col-lg-9">
                                 <input type="text" name="envato_api_key" class="form-control" placeholder="<?php echo $settings_row['envato_api_key']; ?>" disabled readonly>
-                                <small id="sh-text1" class="form-text text-muted col-md-6" style="padding: 0px;">Click the Save button This key will be generated automatically.</small>
+                                <small id="sh-text1" class="form-text text-muted col-md-6" style="padding: 0px;">Click the حفظ button This key will be generated automatically.</small>
                             </div>
                         </div>
                         <div class="form-group row mb-4">
@@ -109,7 +109,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-group row">
                             <div class="col-sm-3"></div>
                             <div class="col-sm-9">
-                                <button type="submit" name="submit" class="btn btn-primary" style="min-width: 110px;">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary" style="min-width: 110px;">حفظ</button>
                             </div>
                         </div>
                     </form>
