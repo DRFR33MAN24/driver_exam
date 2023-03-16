@@ -28,7 +28,7 @@ if (isset($_POST['submit']) and isset($_GET['add'])) {
     $data = array(
         'category' => 'Normal',
         'video_title'  => addslashes(trim($_POST['video_title'])),
-        'video_url' => $_POST['video_title'],
+        'video_url' => $_POST['video_url'],
 
         'thumbnail'  => $thumbnail,
         'status'  =>  '1'
