@@ -29,6 +29,7 @@ if (isset($_POST['submit']) and isset($_GET['add'])) {
         'user_type' => 'Normal',
         'user_name'  => addslashes(trim($_POST['user_name'])),
         'user_email'  =>  addslashes(trim($_POST['user_email'])),
+        'user_id_num'  =>  addslashes(trim($_POST['user_id_num'])),
         'user_password'  =>  md5(trim($_POST['user_password'])),
         'user_phone'  =>  addslashes(trim($_POST['user_phone'])),
         'user_gender'  =>  $_POST['user_gender'],
@@ -75,6 +76,7 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
         $data = array(
             'user_name'  => addslashes(trim($_POST['user_name'])),
             'user_email'  =>  addslashes(trim($_POST['user_email'])),
+            'user_id_num'  =>  addslashes(trim($_POST['user_id_num'])),
             'user_password'  =>  md5(trim($_POST['user_password'])),
             'user_phone'  =>  addslashes(trim($_POST['user_phone'])),
             'user_gender'  =>  $_POST['user_gender'],
@@ -103,6 +105,7 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
         $data = array(
             'user_name'  => addslashes(trim($_POST['user_name'])),
             'user_email'  =>  addslashes(trim($_POST['user_email'])),
+            'user_id_num'  =>  addslashes(trim($_POST['user_id_num'])),
             'user_phone'  =>  addslashes(trim($_POST['user_phone'])),
             'user_gender'  =>  $_POST['user_gender'],
             'profile_img'  => $profile_img,
@@ -111,6 +114,7 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
         $data = array(
             'user_name'  => addslashes(trim($_POST['user_name'])),
             'user_email'  =>  addslashes(trim($_POST['user_email'])),
+            'user_id_num'  =>  addslashes(trim($_POST['user_id_num'])),
             'user_password'  =>  md5(trim($_POST['user_password'])),
             'user_phone'  =>  addslashes(trim($_POST['user_phone'])),
             'user_gender'  =>  $_POST['user_gender']
@@ -119,6 +123,7 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
         $data = array(
             'user_name'  => addslashes(trim($_POST['user_name'])),
             'user_email'  =>  addslashes(trim($_POST['user_email'])),
+            'user_id_num'  =>  addslashes(trim($_POST['user_id_num'])),
             'user_phone'  =>  addslashes(trim($_POST['user_phone'])),
             'user_gender'  =>  $_POST['user_gender'],
         );
@@ -169,6 +174,14 @@ if (isset($_POST['submit']) and isset($_POST['user_id'])) {
                                 <input type="text" name="user_email" value="<?php if (isset($_GET['user_id'])) {
                                                                                 echo $user_row['user_email'];
                                                                             } ?>" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-4">
+                            <label class="col-sm-3 col-form-label">رقم الهوية</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="user_id_num" value="<?php if (isset($_GET['user_id'])) {
+                                                                                    echo $user_row['user_id_num'];
+                                                                                } ?>" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group row mb-4">

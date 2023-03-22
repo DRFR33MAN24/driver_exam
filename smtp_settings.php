@@ -201,7 +201,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="col-md-5">
                         <div class="form-control" style="padding: 10px 20px;border-radius: 6px;margin-top:15px;">
-                            <h4>اختبر اعدادات البؤيد</h4>
+                            <h4>اختبر اعدادات البريد</h4>
                             <p style="color:#8a8a8a;">ارسل بريد اختباري لترى إن كان البريد يعمل ام لا</p>
                             <hr />
                             <form action="" method="post" id="check_smtp_form">

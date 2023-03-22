@@ -568,6 +568,7 @@ if ($get_helper['helper_name'] == "get_language_list") {
 	$response = array();
 
 	$email = trim($get_helper['user_email']);
+	$id_num = trim($get_helper['user_id_num']);
 	$password = trim($get_helper['user_password']);
 	$auth_id = trim($get_helper['auth_id']);
 	$user_type = trim($get_helper['type']);
@@ -610,7 +611,7 @@ if ($get_helper['helper_name'] == "get_language_list") {
 			break;
 
 		case 'Normal': {
-				$qry = "SELECT * FROM tbl_users WHERE user_email = '$email' AND (`user_type`='Normal' OR `user_type`='normal') AND `id` <> 0";
+				$qry = "SELECT * FROM tbl_users WHERE user_id_num = '$id_num' AND (`user_type`='Normal' OR `user_type`='normal') AND `id` <> 0";
 				$result = mysqli_query($mysqli, $qry);
 				$num_rows = mysqli_num_rows($result);
 
@@ -660,6 +661,7 @@ if ($get_helper['helper_name'] == "get_language_list") {
 	$data['user_id'] = $row['id'];
 	$data['user_name'] = $row['user_name'];
 	$data['user_email'] = ($row['user_email'] != '') ? $row['user_email'] : '';
+	$data['user_id_num'] = ($row['user_id_num'] != '') ? $row['user_id_num'] : '';
 	$data['user_phone'] = ($row['user_phone'] != '') ? $row['user_phone'] : '';
 	$data['user_gender'] = $row['user_gender'];
 	$data['profile_img'] = get_images($row['profile_img']);
@@ -687,6 +689,7 @@ if ($get_helper['helper_name'] == "get_language_list") {
 		$data = array(
 			'user_name'  =>  cleanInput($get_helper['user_name']),
 			'user_email'  =>  trim($get_helper['user_email']),
+			'user_id_num'  =>  trim($get_helper['user_id_num']),
 			'user_phone'  =>  cleanInput($get_helper['user_phone']),
 		);
 

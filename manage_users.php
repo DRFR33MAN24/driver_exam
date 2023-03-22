@@ -87,6 +87,7 @@ $result = mysqli_query($mysqli, $sql_query) or die(mysqli_error($mysqli));
                                     <th style="width: 40px;">الصورة</th>
                                     <th>الاسم</th>
                                     <th>البريد</th>
+                                    <th>رقم الهوية</th>
                                     <th class="text-center">الحالة</th>
                                     <th style="width: 200px;" class="text-center">خيارات</th>
                                 </tr>
@@ -109,6 +110,7 @@ $result = mysqli_query($mysqli, $sql_query) or die(mysqli_error($mysqli));
                                         </td>
                                         <td><?php echo $row['user_name']; ?></td>
                                         <td><?php echo $row['user_email']; ?></td>
+                                        <td><?php echo $row['user_id_num']; ?></td>
                                         <td class="text-center">
                                             <?php if ($row['status'] != "0") { ?>
                                                 <a class="enable_disable" href="javascript:void(0)" data-id="<?= $row['id'] ?>" data-table_id="id" data-table="<?= $tableName ?>" data-action="deactive" data-column="status" data-bs-toggle="tooltip" data-placement="top" title="Change Status"><span class="badge badge-success badge-icon"><i class="fa fa-check" aria-hidden="true"></i><span>Enable</span></span></a>
