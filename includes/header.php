@@ -194,6 +194,14 @@ $mysqli->set_charset("utf8mb4");
                             <span class="nav-link__text">الاسئلة</span>
                         </a>
                     </li>
+                    <!-- <li class="nav-item <?php if ($currentFile == "manage_questions_categories.php" or $currentFile == "add_questions_categories.php") { ?>active<?php } ?>">
+                        <a class="nav-link pb-page-link" href="manage_questions_categories.php">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 960 960" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                <path d="m261 530 220-354 220 354H261Zm445 446q-74 0-124-50t-50-124q0-74 50-124t124-50q74 0 124 50t50 124q0 74-50 124t-124 50Zm-586-25V647h304v304H120Zm586.085-35Q754 916 787 882.916q33-33.085 33-81Q820 754 786.916 721q-33.085-33-81.001-33Q658 688 625 721.084q-33 33.085-33 81Q592 850 625.084 883q33.085 33 81.001 33ZM180 891h184V707H180v184Zm189-421h224L481 289 369 470Zm112 0ZM364 707Zm342 95Z" />
+                            </svg>
+                            <span class="nav-link__text">فئات الاسئلة</span>
+                        </a>
+                    </li> -->
                     <li class="nav-item <?php if ($currentFile == "add_videos.php" or $currentFile == "manage_videos.php") { ?>active<?php } ?>">
                         <a class="nav-link pb-page-link" href="manage_videos.php">
                             <svg xmlns="http://www.w3.org/2000/svg" height="19" width="19" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">

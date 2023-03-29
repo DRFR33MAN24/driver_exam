@@ -125,6 +125,13 @@ switch ($_POST['action']) {
 					}
 					$deleteSql = "DELETE FROM $tbl_nm WHERE `id` IN ($ids)";
 					mysqli_query($mysqli, $deleteSql);
+				} else if ($tbl_nm == 'tbl_questions_categories') {
+
+					$sql = "SELECT * FROM tbl_questions_categories WHERE `id` IN ($ids)";
+					$res = mysqli_query($mysqli, $sql);
+
+					$deleteSql = "DELETE FROM $tbl_nm WHERE `id` IN ($ids)";
+					mysqli_query($mysqli, $deleteSql);
 				}
 				$_SESSION['msg'] = "12";
 			}
