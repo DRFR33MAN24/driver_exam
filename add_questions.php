@@ -10,6 +10,9 @@ $page_save = (isset($_GET['questions_id'])) ? 'حفظ' : 'إنشاء';
 $language_qry = "SELECT * FROM tbl_language ORDER BY language_name";
 $language_result = mysqli_query($mysqli, $language_qry);
 
+$questions_cat_qry = "SELECT * FROM tbl_questions_categories";
+$questions_cat_result = mysqli_query($mysqli, $questions_cat_qry);
+
 if (isset($_POST['submit']) and isset($_GET['add'])) {
 
 
@@ -35,6 +38,7 @@ if (isset($_POST['submit']) and isset($_GET['add'])) {
 
     $data = array(
         'lan_id'  =>  $_POST['lan_id'],
+        'cat_id'  =>  $_POST['cat_id'],
         'answer'  =>  addslashes($_POST['answer']),
         'answer_a'  =>  addslashes($_POST['answer_a']),
         'answer_b'  =>  addslashes($_POST['answer_b']),
@@ -83,6 +87,7 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
 
     $data = array(
         'lan_id'  =>  $_POST['lan_id'],
+        'cat_id'  =>  $_POST['cat_id'],
         'answer'  =>  addslashes($_POST['answer']),
         'answer_a'  =>  addslashes($_POST['answer_a']),
         'answer_b'  =>  addslashes($_POST['answer_b']),
@@ -134,6 +139,22 @@ if (isset($_POST['submit']) and isset($_POST['questions_id'])) {
                                             <option value="<?php echo $lan_row['lid']; ?>" <?php if ($lan_row['lid'] == $row['lan_id']) { ?>selected<?php } ?>><?php echo $lan_row['language_name']; ?></option>
                                         <?php } else { ?>
                                             <option value="<?php echo $lan_row['lid']; ?>"><?php echo $lan_row['language_name']; ?></option>
+                                        <?php } ?>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-4">
+                            <label class="col-sm-3 col-form-label">الفئة</label>
+                            <div class="col-sm-9">
+                                <select name="cat_id" id="cat_id" class="form-control basic2" required>
+                                    <option value="">--اختر الفئة--</option>
+                                    <?php while ($q_cat_row = mysqli_fetch_array($questions_cat_result)) { ?>
+                                        <?php if (isset($_GET['questions_id'])) { ?>
+                                            <option value="<?php echo $q_cat_row['id']; ?>" <?php if ($q_cat_row['id'] == $row['cat_id']) { ?>selected<?php } ?>><?php echo $q_cat_row['category_name']; ?></option>
+                                        <?php } else { ?>
+                                            <option value="<?php echo $q_cat_row['id']; ?>"><?php echo $q_cat_row['category_name']; ?></option>
                                         <?php } ?>
                                     <?php } ?>
                                 </select>
