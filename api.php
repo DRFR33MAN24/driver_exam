@@ -146,26 +146,7 @@ if ($device_id != null) {
 		} else {
 
 
-			if ($get_helper['helper_name'] == "get_language_list") {
-
-				$jsonObj = array();
-
-				$sql = "SELECT * FROM tbl_language WHERE tbl_language.status='1' ORDER BY tbl_language.lid DESC";
-				$result = mysqli_query($mysqli, $sql);
-
-				while ($data = mysqli_fetch_assoc($result)) {
-
-					$row['lid'] = $data['lid'];
-					$row['language_name'] = $data['language_name'];
-
-					array_push($jsonObj, $row);
-				}
-
-				$set['DRIVING_EXAM_APP'] = $jsonObj;
-				header('Content-Type: application/json; charset=utf-8');
-				echo $val = str_replace('\\/', '/', json_encode($set, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
-				die();
-			} else if ($get_helper['helper_name'] == "get_cat_list") {
+			if ($get_helper['helper_name'] == "get_cat_list") {
 
 				$jsonObj = array();
 
@@ -725,6 +706,26 @@ if ($device_id != null) {
 	// 	echo $val = str_replace('\\/', '/', json_encode($set, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 	// 	die();
 	//} else 
+	if ($get_helper['helper_name'] == "get_language_list") {
+
+		$jsonObj = array();
+
+		$sql = "SELECT * FROM tbl_language WHERE tbl_language.status='1' ORDER BY tbl_language.lid DESC";
+		$result = mysqli_query($mysqli, $sql);
+
+		while ($data = mysqli_fetch_assoc($result)) {
+
+			$row['lid'] = $data['lid'];
+			$row['language_name'] = $data['language_name'];
+
+			array_push($jsonObj, $row);
+		}
+
+		$set['DRIVING_EXAM_APP'] = $jsonObj;
+		header('Content-Type: application/json; charset=utf-8');
+		echo $val = str_replace('\\/', '/', json_encode($set, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+		die();
+	} else
 	if ($get_helper['helper_name'] == "user_login") {
 
 		$response = array();
@@ -782,7 +783,7 @@ if ($device_id != null) {
 
 						if ($row['status'] == 1) {
 							if ($row['user_password'] == md5($password)) {
-								if ($row['device_id'] == $device_id || $row['device_id'] == null) {
+								if ($row['device_id'] == $device_id || $row['device_id'] == null || $row['device_id'] == "") {
 
 									$user_id = $row['id'];
 
@@ -999,11 +1000,10 @@ if ($device_id != null) {
 		echo $val = str_replace('\\/', '/', json_encode($set, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 		die();
 	}
+} else {
+	$response = array('msg' => $app_lang['account_deactive'], 'success' => '0');
+	$set['DRIVING_EXAM_APP'][] = $response;
+	header('Content-Type: application/json; charset=utf-8');
+	echo $val = str_replace('\\/', '/', json_encode($set, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+	die();
 }
-
-
-
-
-//  else {
-// 	$get_helper = get_api_data($_POST['data']);
-// }

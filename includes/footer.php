@@ -37,6 +37,56 @@
 
   });
 
+
+  $(".refresh_id").on("click", function(e) {
+
+    e.preventDefault();
+
+    var _id = $(this).data("id");
+    var _table = $(this).data("table");
+
+
+    swal({
+      title: "هل انت متأكد من انك تريد إعادة تعيين معرف الجهاز",
+      type: "warning",
+      confirmButtonClass: 'btn btn-primary mb-2',
+      cancelButtonClass: 'btn btn-danger mb-2',
+      buttonsStyling: false,
+      showCancelButton: true,
+      confirmButtonText: "نعم",
+      cancelButtonText: "لا",
+      closeOnConfirm: false,
+      closeOnCancel: false,
+      showLoaderOnConfirm: true
+    }).then(function(result) {
+      if (result.value) {
+
+        $.ajax({
+          type: 'post',
+          url: 'processData.php',
+          // dataType: 'json',
+
+          data: {
+            id: _id,
+            for_action: 'refresh',
+            table: _table,
+            'action': 'multi_action'
+          },
+          success: function(res) {
+            console.log(res);
+            location.reload();
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+            console.log(xhr.responseJSON);
+
+          }
+        });
+      } else {
+        swal.close();
+      }
+    });
+  });
+
   $(".delete_data").on("click", function(e) {
 
     e.preventDefault();

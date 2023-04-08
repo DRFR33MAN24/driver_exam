@@ -134,6 +134,9 @@ switch ($_POST['action']) {
 					mysqli_query($mysqli, $deleteSql);
 				}
 				$_SESSION['msg'] = "12";
+			} else if ($action == 'refresh') {
+				$sql = "UPDATE $tbl_nm SET `device_id`='' WHERE `id` IN ($ids)";
+				mysqli_query($mysqli, $sql);
 			}
 
 			$response['status'] = 1;

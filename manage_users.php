@@ -118,12 +118,18 @@ $result = mysqli_query($mysqli, $sql_query) or die(mysqli_error($mysqli));
                                                 <a class="enable_disable" href="javascript:void(0)" data-id="<?= $row['id'] ?>" data-table_id="id" data-table="<?= $tableName ?>" data-action="active" data-column="status" data-bs-toggle="tooltip" data-placement="top" title="Change Status"><span class="badge badge-danger badge-icon"><i class="fa fa-check" aria-hidden="true"></i><span>Disable </span></span></a>
                                             <?php } ?>
                                         </td>
+
+
                                         <td class="pb-link-icon text-center">
                                             <a href="add_user.php?user_id=<?php echo $row['id']; ?>" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Edit" style="padding: 10px 10px !important;">
                                                 <i class="fa fa-edit"></i>
                                             </a>
                                             <a href="" class="btn btn-danger delete_data" data-id="<?php echo $row['id']; ?>" data-table="<?= $tableName ?>" data-bs-toggle="tooltip" data-placement="top" title="Delete" style="padding: 10px 10px !important;">
                                                 <i class="fa fa-trash"></i>
+                                            </a>
+
+                                            <a href="" class="btn btn-warning refresh_id" data-id="<?php echo $row['id']; ?>" data-table="<?= $tableName ?>" data-bs-toggle="tooltip" data-placement="top" title="Refresh" style="padding: 10px 10px !important;">
+                                                <i class="fa fa-refresh"></i>
                                             </a>
                                         </td>
                                     </tr>
